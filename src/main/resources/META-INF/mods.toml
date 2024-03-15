@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="All Right Reserved"
+issueTrackerURL=""
+displayURL=""
+###logoFile="bd_dtn_banner.png"
+[[mods]] #mandatory
+    modId="allbarkallbite_dtn"
+    version="${file.jarVersion}"
+###    updateJSONURL=""
+    displayName="All Bark, All Bite For DTN"
+    credits="MashXP (Converting Models, Making the Addon), DashieDev (Providing the Base for the Addon)"
+    authors="carlo_andre01"
+    description=" All of All Bark, All Bite Skins, now for Doggy Talents Next!"
+[[dependencies.allbarkallbite_dtn]] #optional
+    modId="forge"
+    mandatory=true
+    versionRange="[40.0.18,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.allbarkallbite_dtn]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.allbarkallbite_dtn]]
+    modId="doggytalents"
+    mandatory=true
+    versionRange="[1.17.0,)"
+    ordering="NONE"
+    side="BOTH"
