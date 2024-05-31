@@ -1,7 +1,6 @@
 package skinexpansion_dtn;
 import org.joml.Vector3f;
 
-import skinexpansion_dtn.models.Scavenger;
 import doggytalents.api.events.RegisterCustomDogModelsEvent;
 import doggytalents.api.events.RegisterDogSkinJsonPathEvent;
 import doggytalents.api.events.RegisterCustomDogModelsEvent.DogModelProps.Builder;
@@ -12,6 +11,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import skinexpansion_dtn.models.Beowolf;
 
 @Mod(Constants.MOD_ID)
 public class DTNSkinExpansion {
@@ -27,9 +27,7 @@ public class DTNSkinExpansion {
     }
 
     public static void registeringSkin(RegisterCustomDogModelsEvent event) {
-        event.register(new Builder(getRes("abab_dog"), ModelLayerLocations.ABAB_DOG));
-        event.register(new Builder(getRes("abab_scavenger"), ModelLayerLocations.ABAB_SCAVENGER)
-            .withGlowingEyes());
+        event.register(new Builder(getRes("beowolf"), ModelLayerLocations.BEOWOLF));
 
     //CUSTOMIZABLE REGISTERS
         // event.register(new Builder(getRes("chihuahua"), ModelLayerLocations.CHIHUAHUA)
@@ -48,8 +46,7 @@ public class DTNSkinExpansion {
     }
 
     public static void registerLayerDefinition(RegisterLayerDefinitions event) {
-        event.registerLayerDefinition(ModelLayerLocations.ABAB_DOG, LayerDefinitions::createBodyLayer);
-        event.registerLayerDefinition(ModelLayerLocations.ABAB_SCAVENGER, Scavenger::createBodyLayer);
+        event.registerLayerDefinition(ModelLayerLocations.BEOWOLF, Beowolf::createBodyLayer);
    }
 
     public static ResourceLocation getRes(String name) {

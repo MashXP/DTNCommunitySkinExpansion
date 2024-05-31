@@ -1,0 +1,12 @@
+{
+    "dog_skins" : [
+        {
+            "skin_name" : "Beowolf",
+            "skin_id" : "skinexpansion_dtn:textures/beowolf",
+            "use_model" : "skinexpansion_dtn:beowolf",
+            "based_on" : "Beowolf from RWBY - an American anime-influenced 3D computer-animated web series created by Monty Oum for Rooster Teeth",
+            "tags" : "expansion",
+            "author" : "MashXP"
+        }
+    ]
+}
