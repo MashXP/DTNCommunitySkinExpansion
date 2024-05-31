@@ -5,8 +5,8 @@ plugins {
 }
 
 version = '1.0'
-group = 'com.github.mrblueyeti'
-archivesBaseName = "AllBarkAllBiteForDTN-1.20.1"
+group = 'com.github.mashxp'
+archivesBaseName = "DTNSkinExpansion-1.20.1"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -47,7 +47,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                allbarkallbite_dtn {
+                skinexpansion_dtn {
                     source sourceSets.main
                 }
             }
@@ -55,11 +55,11 @@ minecraft {
 
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'allbarkallbite_dtn'
+            property 'forge.enabledGameTestNamespaces', 'skinexpansion_dtn'
         }
 
         server {
-            property 'forge.enabledGameTestNamespaces', 'allbarkallbite_dtn'
+            property 'forge.enabledGameTestNamespaces', 'skinexpansion_dtn'
             args '--nogui'
         }
 
@@ -67,7 +67,7 @@ minecraft {
         // By default, the server will crash when no gametests are provided.
         // The gametest system is also enabled by default for other run configs under the /test command.
         gameTestServer {
-            property 'forge.enabledGameTestNamespaces', 'allbarkallbite_dtn'
+            property 'forge.enabledGameTestNamespaces', 'skinexpansion_dtn'
         }
 
         data {
@@ -75,7 +75,7 @@ minecraft {
             workingDirectory project.file('run-data')
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'allbarkallbite_dtn', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'skinexpansion_dtn', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
         }
     }
 }
@@ -104,12 +104,12 @@ jar {
 
     manifest {
         attributes([
-            "Specification-Title": "Better Dogs For DTN",
-            "Specification-Vendor": "MrBlueYeti",
+            "Specification-Title": "DTN Skin Expansion",
+            "Specification-Vendor": "MashXP",
             "Specification-Version": project.version,
             "Implementation-Title": project.name,
             "Implementation-Version": project.version,
-            "Implementation-Vendor" :"MrBlueYeti",
+            "Implementation-Vendor" :"MashXP",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

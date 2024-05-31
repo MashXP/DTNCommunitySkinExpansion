@@ -1,7 +1,7 @@
-package allbarkallbite_dtn;
+package skinexpansion_dtn;
 import org.joml.Vector3f;
 
-import allbarkallbite_dtn.models.Scavenger;
+import skinexpansion_dtn.models.Scavenger;
 import doggytalents.api.events.RegisterCustomDogModelsEvent;
 import doggytalents.api.events.RegisterDogSkinJsonPathEvent;
 import doggytalents.api.events.RegisterCustomDogModelsEvent.DogModelProps.Builder;
@@ -14,14 +14,14 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(Constants.MOD_ID)
-public class AllBarkAllBiteForDTN {
+public class DTNSkinExpansion {
 
-    public AllBarkAllBiteForDTN() {
+    public DTNSkinExpansion() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
-            modEventBus.addListener(AllBarkAllBiteForDTN::registeringSkin);
-            modEventBus.addListener(AllBarkAllBiteForDTN::registeringSkinJson);
-            modEventBus.addListener(AllBarkAllBiteForDTN::registerLayerDefinition);
+            modEventBus.addListener(DTNSkinExpansion::registeringSkin);
+            modEventBus.addListener(DTNSkinExpansion::registeringSkinJson);
+            modEventBus.addListener(DTNSkinExpansion::registerLayerDefinition);
         });
 
     }
@@ -48,7 +48,7 @@ public class AllBarkAllBiteForDTN {
     }
 
     public static void registerLayerDefinition(RegisterLayerDefinitions event) {
-        event.registerLayerDefinition(ModelLayerLocations.ABAB_DOG, LayerDefinitions::abab_dog);
+        event.registerLayerDefinition(ModelLayerLocations.ABAB_DOG, LayerDefinitions::createBodyLayer);
         event.registerLayerDefinition(ModelLayerLocations.ABAB_SCAVENGER, Scavenger::createBodyLayer);
    }
 
