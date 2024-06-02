@@ -5,4 +5,5 @@ import net.minecraft.resources.ResourceLocation;
 
 public class ModelLayerLocations {
     public static final ModelLayerLocation BEOWOLF = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "beowolf"), "main");
+    public static final ModelLayerLocation NINETALES = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "ninetales"), "main");
 }
