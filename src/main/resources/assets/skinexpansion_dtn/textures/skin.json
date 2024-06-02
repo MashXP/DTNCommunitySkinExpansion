@@ -7,6 +7,14 @@
             "based_on" : "Beowolf from RWBY - an American anime-influenced 3D computer-animated web series created by Monty Oum for Rooster Teeth",
             "tags" : "expansion",
             "author" : "MashXP"
+        },
+        {
+            "skin_name" : "Kyukon (Ninetales)",
+            "skin_id" : "skinexpansion_dtn:textures/ninetales",
+            "use_model" : "skinexpansion_dtn:ninetales",
+            "based_on" : "Ninetales from Pokemon Gen 1",
+            "author" : "MashXP",
+            "tags" : "pokemon, anime, classical expansion"
         }
     ]
 }

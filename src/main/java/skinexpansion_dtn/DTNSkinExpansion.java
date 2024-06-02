@@ -12,6 +12,7 @@ import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import skinexpansion_dtn.models.Beowolf;
+import skinexpansion_dtn.models.Ninetales;
 
 @Mod(Constants.MOD_ID)
 public class DTNSkinExpansion {
@@ -28,6 +29,7 @@ public class DTNSkinExpansion {
 
     public static void registeringSkin(RegisterCustomDogModelsEvent event) {
         event.register(new Builder(getRes("beowolf"), ModelLayerLocations.BEOWOLF));
+        event.register(new Builder(getRes("ninetales"), ModelLayerLocations.NINETALES));
 
     //CUSTOMIZABLE REGISTERS
         // event.register(new Builder(getRes("chihuahua"), ModelLayerLocations.CHIHUAHUA)
@@ -47,6 +49,7 @@ public class DTNSkinExpansion {
 
     public static void registerLayerDefinition(RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ModelLayerLocations.BEOWOLF, Beowolf::createBodyLayer);
+        event.registerLayerDefinition(ModelLayerLocations.NINETALES, Ninetales::createBodyLayer);
    }
 
     public static ResourceLocation getRes(String name) {
