@@ -15,14 +15,14 @@ import skinexpansion_dtn.models.Beowolf;
 import skinexpansion_dtn.models.Ninetales;
 
 @Mod(Constants.MOD_ID)
-public class DTNSkinExpansion {
+public class DTNCommunitySkinExpansion {
 
-    public DTNSkinExpansion() {
+    public DTNCommunitySkinExpansion() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
-            modEventBus.addListener(DTNSkinExpansion::registeringSkin);
-            modEventBus.addListener(DTNSkinExpansion::registeringSkinJson);
-            modEventBus.addListener(DTNSkinExpansion::registerLayerDefinition);
+            modEventBus.addListener(DTNCommunitySkinExpansion::registeringSkin);
+            modEventBus.addListener(DTNCommunitySkinExpansion::registeringSkinJson);
+            modEventBus.addListener(DTNCommunitySkinExpansion::registerLayerDefinition);
         });
 
     }
