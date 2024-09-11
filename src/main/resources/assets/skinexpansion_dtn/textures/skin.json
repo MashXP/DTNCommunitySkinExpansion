@@ -5,7 +5,7 @@
             "skin_id" : "skinexpansion_dtn:textures/beowolf",
             "use_model" : "skinexpansion_dtn:beowolf",
             "based_on" : "Beowolf from RWBY - an American anime-influenced 3D computer-animated web series created by Monty Oum for Rooster Teeth",
-            "tags" : "expansion",
+            "tags" : "expansion, community",
             "author" : "MashXP"
         },
         {
@@ -14,7 +14,79 @@
             "use_model" : "skinexpansion_dtn:ninetales",
             "based_on" : "Ninetales from Pokemon Gen 1",
             "author" : "MashXP",
-            "tags" : "pokemon, anime, classical expansion"
+            "tags" : "pokemon, anime, classical, community"
+        },
+        {
+            "skin_name" : "Eievui (Eevee)",
+            "skin_id" : "skinexpansion_dtn:textures/eeveelution_eevee",
+            "use_model" : "skinexpansion_dtn:eeveelution_eevee",
+            "based_on" : "Eevee from Pokemon Gen 1",
+            "author" : "MashXP",
+            "tags" : "pokemon, anime, classical, community"
+        },
+        {
+            "skin_name" : "Booster (Flareon)",
+            "skin_id" : "skinexpansion_dtn:textures/eeveelution_flareon",
+            "use_model" : "skinexpansion_dtn:eeveelution_flareon",
+            "based_on" : "Flareon from Pokemon Gen 1",
+            "author" : "MashXP",
+            "tags" : "pokemon, anime, classical, community"
+        },
+        {
+            "skin_name" : "Showers (Vaporeon)",
+            "skin_id" : "skinexpansion_dtn:textures/eeveelution_vaporeon",
+            "use_model" : "skinexpansion_dtn:eeveelution_vaporeon",
+            "based_on" : "Vaporeon from Pokemon Gen 1",
+            "author" : "MashXP",
+            "tags" : "pokemon, anime, classical, community"
+        },
+        {
+            "skin_name" : "Thunders (Jolteon)",
+            "skin_id" : "skinexpansion_dtn:textures/eeveelution_jolteon",
+            "use_model" : "skinexpansion_dtn:eeveelution_jolteon",
+            "based_on" : "Jolteon from Pokemon Gen 1",
+            "author" : "MashXP",
+            "tags" : "pokemon, anime, classical, community"
+        },
+        {
+            "skin_name" : "Eifie (Espeon)",
+            "skin_id" : "skinexpansion_dtn:textures/eeveelution_espeon",
+            "use_model" : "skinexpansion_dtn:eeveelution_espeon",
+            "based_on" : "Espeon from Pokemon Gen 2",
+            "author" : "MashXP",
+            "tags" : "pokemon, anime, classical, community"
+        },
+        {
+            "skin_name" : "Blacky (Umbreon)",
+            "skin_id" : "skinexpansion_dtn:textures/eeveelution_umbreon",
+            "use_model" : "skinexpansion_dtn:eeveelution_umbreon",
+            "based_on" : "Umbreon from Pokemon Gen 2",
+            "author" : "MashXP",
+            "tags" : "pokemon, anime, classical, community"
+        },
+        {
+            "skin_name" : "Leafia (Leafeon)",
+            "skin_id" : "skinexpansion_dtn:textures/eeveelution_leafeon",
+            "use_model" : "skinexpansion_dtn:eeveelution_leafeon",
+            "based_on" : "Leafeon from Pokemon Gen 4",
+            "author" : "MashXP",
+            "tags" : "pokemon, anime, classical, community"
+        },
+        {
+            "skin_name" : "Glacia (Glaceon)",
+            "skin_id" : "skinexpansion_dtn:textures/eeveelution_glaceon",
+            "use_model" : "skinexpansion_dtn:eeveelution_glaceon",
+            "based_on" : "Glaceon from Pokemon Gen 4",
+            "author" : "MashXP",
+            "tags" : "pokemon, anime, classical, community"
+        },
+        {
+            "skin_name" : "Nymphia (Sylveon)",
+            "skin_id" : "skinexpansion_dtn:textures/eeveelution_sylveon",
+            "use_model" : "skinexpansion_dtn:eeveelution_sylveon",
+            "based_on" : "Sylveon from Pokemon Gen 6",
+            "author" : "MashXP",
+            "tags" : "pokemon, anime, classical, community"
         }
     ]
 }
