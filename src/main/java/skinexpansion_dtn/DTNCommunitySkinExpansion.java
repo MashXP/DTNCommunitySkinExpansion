@@ -3,14 +3,11 @@ import org.joml.Vector3f;
 
 import doggytalents.api.events.RegisterCustomDogModelsEvent;
 import doggytalents.api.events.RegisterDogSkinJsonPathEvent;
+import doggytalents.api.fabric_helper.entry.DogModelConfiguationRegistry.Context;
+import doggytalents.api.fabric_helper.entry.DogModelConfigurationEntry;
+import skinexpansion_dtn.forge_imitate.event.EntityRenderersEvent.RegisterLayerDefinitions;
 import doggytalents.api.events.RegisterCustomDogModelsEvent.DogModelProps.Builder;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.EntityRenderersEvent.RegisterLayerDefinitions;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.DistExecutor;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import skinexpansion_dtn.models.Beowolf;
 import skinexpansion_dtn.models.EeveelutionEevee;
 import skinexpansion_dtn.models.EeveelutionEspeon;
@@ -23,18 +20,18 @@ import skinexpansion_dtn.models.EeveelutionUmbreon;
 import skinexpansion_dtn.models.EeveelutionVaporeon;
 import skinexpansion_dtn.models.Ninetales;
 
-@Mod(Constants.MOD_ID)
-public class DTNCommunitySkinExpansion {
+//@Mod(Constants.MOD_ID)
+public class DTNCommunitySkinExpansion implements DogModelConfigurationEntry {
 
-    public DTNCommunitySkinExpansion() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
-            modEventBus.addListener(DTNCommunitySkinExpansion::registeringSkin);
-            modEventBus.addListener(DTNCommunitySkinExpansion::registeringSkinJson);
-            modEventBus.addListener(DTNCommunitySkinExpansion::registerLayerDefinition);
-        });
+    // public DTNCommunitySkinExpansion() {
+    //     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    //     DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
+    //         modEventBus.addListener(DTNCommunitySkinExpansion::registeringSkin);
+    //         modEventBus.addListener(DTNCommunitySkinExpansion::registeringSkinJson);
+    //         modEventBus.addListener(DTNCommunitySkinExpansion::registerLayerDefinition);
+    //     });
 
-    }
+    // }
 
     public static void registeringSkin(RegisterCustomDogModelsEvent event) {
         event.register(new Builder(getRes("beowolf"), ModelLayerLocations.BEOWOLF));
@@ -81,6 +78,13 @@ public class DTNCommunitySkinExpansion {
 
     public static ResourceLocation getRes(String name) {
         return new ResourceLocation(Constants.MOD_ID, name);
+    }
+
+    @Override
+    public void onGatherDogModel(Context ctx) {
+        registerLayerDefinition(new RegisterLayerDefinitions());
+        registeringSkinJson(ctx.skinJsonEvent());
+        registeringSkin(ctx.propsEvent());
     }
     
 }

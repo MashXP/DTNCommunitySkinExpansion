@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "skinexpansion_dtn",
+  "version": "${version}",
+
+  "name": "DTN Skin Expansion Addon",
+  "description": "MORE SKINS!!!",
+  "authors": [
+    "mashxp"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "All Right Reserved",
+  "icon": "",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+    ],
+    "client": [
+      
+    ],
+    "doggytalents.dog_model_configuration": [
+      "skinexpansion_dtn.DTNCommunitySkinExpansion"
+    ]
+  },
+
+  "depends": {
+    "doggytalents": ">=1.18.9",
+    "fabricloader": ">=0.15.7",
+    "fabric-api": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+
+  "mixins": [
+  ]
+}
