@@ -3,15 +3,15 @@ loaderVersion="[40,)"
 license="All Right Reserved"
 issueTrackerURL=""
 displayURL=""
-###logoFile="bd_dtn_banner.png"
+logoFile="dtn_community.png"
 [[mods]] #mandatory
     modId="skinexpansion_dtn"
     version="${file.jarVersion}"
 ###    updateJSONURL=""
-    displayName="DTN Skin Expansion Addon"
+    displayName="DTN Community Skin Expansion Addon"
     credits="MashXP (Converting Models, Making the Addon), DashieDev (Providing the Base for the Addon)"
     authors="mashxp"
-    description=" MORE SKINS!!!"
+    description="MORE SKINS!!!"
 [[dependencies.skinexpansion_dtn]] #optional
     modId="forge"
     mandatory=true
