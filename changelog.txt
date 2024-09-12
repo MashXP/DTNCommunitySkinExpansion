@@ -1,0 +1,12 @@
+Release 1.0:
++ Added Ninetales
++ Added Beowolf
++ Added Eeveelution!
+    + Eevee
+    + Flareon
+    + Vaporeon
+    + Espeon
+    + Umbreon
+    + Leafeon
+    + Glaceon
+    + Sylveon
