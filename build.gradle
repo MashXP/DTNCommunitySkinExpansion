@@ -6,7 +6,7 @@ plugins {
 
 version = '1.0'
 group = 'com.github.mashxp'
-archivesBaseName = "DTNCommunitySkinExpansion-1.20.1"
+archivesBaseName = "DTNCommunitySkinExpansion[Fabric]-1.20.1"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
