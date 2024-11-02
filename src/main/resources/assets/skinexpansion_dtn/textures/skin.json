@@ -5,7 +5,7 @@
             "skin_id" : "skinexpansion_dtn:textures/beowolf",
             "use_model" : "skinexpansion_dtn:beowolf",
             "based_on" : "Beowolf from RWBY - an American anime-influenced 3D computer-animated web series created by Monty Oum for Rooster Teeth",
-            "tags" : "community expansion, eeveelution",
+            "tags" : "community expansion",
             "author" : "MashXP"
         },
         {
@@ -87,6 +87,14 @@
             "based_on" : "Sylveon from Pokemon Gen 6",
             "author" : "MashXP",
             "tags" : "pokemon, anime, classical, community expansion, eeveelution"
+        },
+        {
+            "skin_name" : "Moonless",
+            "skin_id" : "skinexpansion_dtn:textures/moonless",
+            "use_model" : "skinexpansion_dtn:moonless",
+            "based_on" : "Moonless from Fear & Hunger - a 2018 survival horror role-playing video game developed by Finnish game developer Miro",
+            "author" : "MashXP",
+            "tags" : "community expansion"
         }
     ]
 }
