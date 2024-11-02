@@ -18,6 +18,7 @@ import skinexpansion_dtn.models.EeveelutionLeafeon;
 import skinexpansion_dtn.models.EeveelutionSylveon;
 import skinexpansion_dtn.models.EeveelutionUmbreon;
 import skinexpansion_dtn.models.EeveelutionVaporeon;
+import skinexpansion_dtn.models.Moonless;
 import skinexpansion_dtn.models.Ninetales;
 
 //@Mod(Constants.MOD_ID)
@@ -45,7 +46,8 @@ public class DTNCommunitySkinExpansion implements DogModelConfigurationEntry {
         event.register(new Builder(getRes("eeveelution_leafeon"), ModelLayerLocations.EEVEELUTION_LEAFEON));
         event.register(new Builder(getRes("eeveelution_glaceon"), ModelLayerLocations.EEVEELUTION_GLACEON));
         event.register(new Builder(getRes("eeveelution_sylveon"), ModelLayerLocations.EEVEELUTION_SYLVEON));
-
+        event.register(new Builder(getRes("moonless"), ModelLayerLocations.MOONLESS)
+                    .withGlowingEyes());
     //CUSTOMIZABLE REGISTERS
         // event.register(new Builder(getRes("chihuahua"), ModelLayerLocations.CHIHUAHUA)
         //     .withDefaultScale(0.704f));
@@ -74,6 +76,7 @@ public class DTNCommunitySkinExpansion implements DogModelConfigurationEntry {
         event.registerLayerDefinition(ModelLayerLocations.EEVEELUTION_LEAFEON, EeveelutionLeafeon::createBodyLayer);
         event.registerLayerDefinition(ModelLayerLocations.EEVEELUTION_GLACEON, EeveelutionGlaceon::createBodyLayer);
         event.registerLayerDefinition(ModelLayerLocations.EEVEELUTION_SYLVEON, EeveelutionSylveon::createBodyLayer);
+        event.registerLayerDefinition(ModelLayerLocations.MOONLESS, Moonless::createBodyLayer);
    }
 
     public static ResourceLocation getRes(String name) {
