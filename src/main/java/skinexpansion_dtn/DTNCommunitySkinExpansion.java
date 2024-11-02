@@ -38,7 +38,8 @@ public class DTNCommunitySkinExpansion {
     }
 
     public static void registeringSkin(RegisterCustomDogModelsEvent event) {
-        event.register(new Builder(getRes("beowolf"), ModelLayerLocations.BEOWOLF));
+        event.register(new Builder(getRes("beowolf"), ModelLayerLocations.BEOWOLF)
+            .withGlowingEyes());
         event.register(new Builder(getRes("ninetales"), ModelLayerLocations.NINETALES));
         event.register(new Builder(getRes("eeveelution_eevee"), ModelLayerLocations.EEVEELUTION_EEVEE));
         event.register(new Builder(getRes("eeveelution_flareon"), ModelLayerLocations.EEVEELUTION_FLAREON));
@@ -50,7 +51,7 @@ public class DTNCommunitySkinExpansion {
         event.register(new Builder(getRes("eeveelution_glaceon"), ModelLayerLocations.EEVEELUTION_GLACEON));
         event.register(new Builder(getRes("eeveelution_sylveon"), ModelLayerLocations.EEVEELUTION_SYLVEON));
         event.register(new Builder(getRes("moonless"), ModelLayerLocations.MOONLESS)
-                    .withGlowingEyes());
+            .withGlowingEyes());
     //CUSTOMIZABLE REGISTERS
         // event.register(new Builder(getRes("chihuahua"), ModelLayerLocations.CHIHUAHUA)
         //     .withDefaultScale(0.704f));
