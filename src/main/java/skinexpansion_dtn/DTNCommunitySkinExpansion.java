@@ -81,7 +81,7 @@ public class DTNCommunitySkinExpansion implements DogModelConfigurationEntry {
    }
 
     public static ResourceLocation getRes(String name) {
-        return new ResourceLocation(Constants.MOD_ID, name);
+        return ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, name);
     }
 
     @Override
