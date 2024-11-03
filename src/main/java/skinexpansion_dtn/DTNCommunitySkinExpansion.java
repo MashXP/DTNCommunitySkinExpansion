@@ -1,5 +1,6 @@
 package skinexpansion_dtn;
-import org.joml.Vector3f;
+
+import com.mojang.math.Vector3f;
 
 import doggytalents.api.events.RegisterCustomDogModelsEvent;
 import doggytalents.api.events.RegisterDogSkinJsonPathEvent;
