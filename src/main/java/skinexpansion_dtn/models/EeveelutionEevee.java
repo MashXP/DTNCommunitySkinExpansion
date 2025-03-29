@@ -8,11 +8,11 @@ import net.minecraft.client.model.geom.builders.MeshDefinition;
 import net.minecraft.client.model.geom.builders.PartDefinition;
 
 public class EeveelutionEevee {
-    public static LayerDefinition createBodyLayer() {
+	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 13.0F, 6.0F, 1.6144F, 0.0F, 0.0F));
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 13.0F, 6.0F));
 
 		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create().texOffs(9, 18).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(-0.1F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
@@ -123,21 +123,21 @@ public class EeveelutionEevee {
 		.texOffs(47, 19).addBox(1.5F, -2.5F, -3.4F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.4F))
 		.texOffs(47, 19).mirror().addBox(-2.5F, -2.5F, -3.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.4F)).mirror(false), PartPose.offsetAndRotation(0.0F, 16.0F, -3.0F, 1.5708F, 0.0F, 0.0F));
 
-		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 12.5F, -6.5F));
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 12.0F, -7.25F));
 
-		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create().texOffs(0, 0).addBox(-3.0F, -3.25F, -2.55F, 6.0F, 6.0F, 4.0F, new CubeDeformation(0.1F))
-		.texOffs(27, 5).addBox(-3.6F, -0.25F, -2.55F, 2.0F, 3.0F, 4.0F, new CubeDeformation(-0.15F))
-		.texOffs(27, 5).mirror().addBox(1.6F, -0.25F, -2.55F, 2.0F, 3.0F, 4.0F, new CubeDeformation(-0.15F)).mirror(false)
-		.texOffs(0, 0).addBox(-3.0F, -3.85F, -2.55F, 6.0F, 6.0F, 4.0F, new CubeDeformation(-0.3F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create().texOffs(0, 0).addBox(-3.0F, -2.75F, -1.8F, 6.0F, 6.0F, 4.0F, new CubeDeformation(0.1F))
+		.texOffs(27, 5).addBox(-3.6F, 0.25F, -1.8F, 2.0F, 3.0F, 4.0F, new CubeDeformation(-0.15F))
+		.texOffs(27, 5).mirror().addBox(1.6F, 0.25F, -1.8F, 2.0F, 3.0F, 4.0F, new CubeDeformation(-0.15F)).mirror(false)
+		.texOffs(0, 0).addBox(-3.0F, -3.35F, -1.8F, 6.0F, 6.0F, 4.0F, new CubeDeformation(-0.3F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition snout = real_head.addOrReplaceChild("snout", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.3F, -1.15F, 0.1309F, 0.0F, 0.0F));
+		PartDefinition snout = real_head.addOrReplaceChild("snout", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.8F, -0.4F, 0.1309F, 0.0F, 0.0F));
 
 		PartDefinition snout_upper = snout.addOrReplaceChild("snout_upper", CubeListBuilder.create().texOffs(0, 10).addBox(-1.5F, -0.5413F, -3.0801F, 3.0F, 2.0F, 4.0F, new CubeDeformation(0.1F)), PartPose.offset(0.0F, -0.52F, 0.0F));
 
 		PartDefinition snout_lower = snout.addOrReplaceChild("snout_lower", CubeListBuilder.create().texOffs(0, 12).addBox(-1.5F, -0.3239F, -3.5779F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.2F))
 		.texOffs(0, 10).addBox(-1.5F, -0.498F, -3.5F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.001F)), PartPose.offset(0.0F, 0.93F, 0.65F));
 
-		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offsetAndRotation(2.5F, -3.0F, 0.25F, 0.3054F, 1.0036F, 0.2618F));
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offsetAndRotation(2.5F, -2.5F, 1.0F, 0.3054F, 1.0036F, 0.2618F));
 
 		PartDefinition head_r1 = left_ear.addOrReplaceChild("head_r1", CubeListBuilder.create().texOffs(58, 6).addBox(-0.9203F, -2.2553F, -0.5F, 2.0F, 3.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.092F, -1.4702F, 1.8785F, -1.5642F, 0.5237F, -1.6108F));
 
@@ -147,7 +147,7 @@ public class EeveelutionEevee {
 
 		PartDefinition head_r4 = left_ear.addOrReplaceChild("head_r4", CubeListBuilder.create().texOffs(16, 14).addBox(-0.5F, -2.5F, -0.5F, 1.0F, 5.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.1245F, -1.6253F, 3.7155F, -1.543F, 1.0037F, -1.5884F));
 
-		PartDefinition head_r5 = left_ear.addOrReplaceChild("head_r5", CubeListBuilder.create().texOffs(16, 14).addBox(-0.0035F, -2.8916F, -0.4058F, 1.0F, 4.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(0.192F, 0.9298F, 0.1285F, -1.5556F, 0.1748F, -1.6092F));
+		PartDefinition head_r5 = left_ear.addOrReplaceChild("head_r5", CubeListBuilder.create().texOffs(16, 14).addBox(-0.0035F, -2.8917F, -0.4058F, 1.0F, 4.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(0.192F, 0.9298F, 0.1285F, -1.5556F, 0.1748F, -1.6092F));
 
 		PartDefinition head_r6 = left_ear.addOrReplaceChild("head_r6", CubeListBuilder.create().texOffs(16, 14).addBox(-1.0F, -6.6382F, 0.5F, 1.0F, 5.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(1.1F, -0.693F, -0.6395F, -1.5708F, -0.4363F, 1.5708F));
 
@@ -155,13 +155,13 @@ public class EeveelutionEevee {
 
 		PartDefinition head_r8 = left_ear.addOrReplaceChild("head_r8", CubeListBuilder.create().texOffs(16, 14).addBox(-1.0F, -3.6382F, 0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(1.1F, 1.0882F, -0.7F, -1.5708F, -0.9163F, 1.5708F));
 
-		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offsetAndRotation(-2.5F, -3.0F, 0.25F, 0.3054F, -1.0036F, -0.2618F));
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offsetAndRotation(-2.5F, -2.5F, 1.0F, 0.3054F, -1.0036F, -0.2618F));
 
 		PartDefinition head_r9 = right_ear.addOrReplaceChild("head_r9", CubeListBuilder.create().texOffs(16, 14).mirror().addBox(-0.5F, -2.5F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offsetAndRotation(-0.2588F, 0.1677F, 0.3008F, -1.5646F, -0.3928F, 1.6117F));
 
 		PartDefinition head_r10 = right_ear.addOrReplaceChild("head_r10", CubeListBuilder.create().texOffs(58, 6).mirror().addBox(-1.0797F, -3.2553F, -0.5F, 2.0F, 4.0F, 1.0F, new CubeDeformation(-0.2F)).mirror(false), PartPose.offsetAndRotation(-0.192F, -0.2202F, 0.4285F, -1.5645F, -0.4364F, 1.6114F));
 
-		PartDefinition head_r11 = right_ear.addOrReplaceChild("head_r11", CubeListBuilder.create().texOffs(16, 14).mirror().addBox(-0.9965F, -2.8916F, -0.4058F, 1.0F, 4.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offsetAndRotation(-0.192F, 0.9298F, 0.1285F, -1.5556F, -0.1748F, 1.6092F));
+		PartDefinition head_r11 = right_ear.addOrReplaceChild("head_r11", CubeListBuilder.create().texOffs(16, 14).mirror().addBox(-0.9965F, -2.8917F, -0.4058F, 1.0F, 4.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offsetAndRotation(-0.192F, 0.9298F, 0.1285F, -1.5556F, -0.1748F, 1.6092F));
 
 		PartDefinition head_r12 = right_ear.addOrReplaceChild("head_r12", CubeListBuilder.create().texOffs(16, 14).mirror().addBox(-0.5F, -2.5F, -0.5F, 1.0F, 5.0F, 1.0F, new CubeDeformation(-0.2F)).mirror(false), PartPose.offsetAndRotation(-0.1245F, -1.6253F, 3.7155F, -1.543F, -1.0037F, 1.5884F));
 
@@ -174,8 +174,6 @@ public class EeveelutionEevee {
 		PartDefinition head_r16 = right_ear.addOrReplaceChild("head_r16", CubeListBuilder.create().texOffs(16, 14).mirror().addBox(0.0F, -6.6382F, 0.5F, 1.0F, 5.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offsetAndRotation(-1.1F, -0.693F, -0.6395F, -1.5708F, 0.4363F, -1.5708F));
 
 		PartDefinition head_r17 = right_ear.addOrReplaceChild("head_r17", CubeListBuilder.create().texOffs(58, 6).mirror().addBox(-1.0797F, -3.2553F, -0.5F, 2.0F, 4.0F, 1.0F, new CubeDeformation(-0.3F)).mirror(false), PartPose.offsetAndRotation(-0.192F, -1.0202F, 2.1285F, -1.5627F, -0.7855F, 1.6084F));
-
-		PartDefinition bone18 = real_head.addOrReplaceChild("bone18", CubeListBuilder.create(), PartPose.offset(-3.5F, -2.5833F, 3.4167F));
 
 		return LayerDefinition.create(meshdefinition, 64, 32);
 	}
