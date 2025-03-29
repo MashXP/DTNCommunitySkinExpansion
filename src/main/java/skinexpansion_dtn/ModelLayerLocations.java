@@ -16,4 +16,5 @@ public class ModelLayerLocations {
     public static final ModelLayerLocation EEVEELUTION_GLACEON = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "eeveelution_glaceon"), "main");
     public static final ModelLayerLocation EEVEELUTION_SYLVEON = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "eeveelution_sylveon"), "main");
     public static final ModelLayerLocation MOONLESS = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "moonless"), "main");
+    public static final ModelLayerLocation OSLO = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "oslo_nanatsu"), "main");
 }
