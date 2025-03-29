@@ -39,19 +39,19 @@ public class DTNCommunitySkinExpansion {
 
     public static void registeringSkin(RegisterCustomDogModelsEvent event) {
         event.register(new Builder(getRes("beowolf"), ModelLayerLocations.BEOWOLF)
-            .withGlowingEyes());
-        event.register(new Builder(getRes("ninetales"), ModelLayerLocations.NINETALES));
-        event.register(new Builder(getRes("eeveelution_eevee"), ModelLayerLocations.EEVEELUTION_EEVEE));
-        event.register(new Builder(getRes("eeveelution_flareon"), ModelLayerLocations.EEVEELUTION_FLAREON));
-        event.register(new Builder(getRes("eeveelution_vaporeon"), ModelLayerLocations.EEVEELUTION_VAPOREON));
-        event.register(new Builder(getRes("eeveelution_jolteon"), ModelLayerLocations.EEVEELUTION_JOLTEON));
-        event.register(new Builder(getRes("eeveelution_espeon"), ModelLayerLocations.EEVEELUTION_ESPEON));
-        event.register(new Builder(getRes("eeveelution_umbreon"), ModelLayerLocations.EEVEELUTION_UMBREON));
-        event.register(new Builder(getRes("eeveelution_leafeon"), ModelLayerLocations.EEVEELUTION_LEAFEON));
-        event.register(new Builder(getRes("eeveelution_glaceon"), ModelLayerLocations.EEVEELUTION_GLACEON));
-        event.register(new Builder(getRes("eeveelution_sylveon"), ModelLayerLocations.EEVEELUTION_SYLVEON));
+            .withGlowingEyes().withAccessory());
+        event.register(new Builder(getRes("ninetales"), ModelLayerLocations.NINETALES).withAccessory());
+        event.register(new Builder(getRes("eeveelution_eevee"), ModelLayerLocations.EEVEELUTION_EEVEE).withAccessory());
+        event.register(new Builder(getRes("eeveelution_flareon"), ModelLayerLocations.EEVEELUTION_FLAREON).withAccessory());
+        event.register(new Builder(getRes("eeveelution_vaporeon"), ModelLayerLocations.EEVEELUTION_VAPOREON).withAccessory());
+        event.register(new Builder(getRes("eeveelution_jolteon"), ModelLayerLocations.EEVEELUTION_JOLTEON).withAccessory());
+        event.register(new Builder(getRes("eeveelution_espeon"), ModelLayerLocations.EEVEELUTION_ESPEON).withAccessory());
+        event.register(new Builder(getRes("eeveelution_umbreon"), ModelLayerLocations.EEVEELUTION_UMBREON).withAccessory());
+        event.register(new Builder(getRes("eeveelution_leafeon"), ModelLayerLocations.EEVEELUTION_LEAFEON).withAccessory());
+        event.register(new Builder(getRes("eeveelution_glaceon"), ModelLayerLocations.EEVEELUTION_GLACEON).withAccessory());
+        event.register(new Builder(getRes("eeveelution_sylveon"), ModelLayerLocations.EEVEELUTION_SYLVEON).withAccessory());
         event.register(new Builder(getRes("moonless"), ModelLayerLocations.MOONLESS)
-            .withGlowingEyes());
+            .withGlowingEyes().withAccessory());
     //CUSTOMIZABLE REGISTERS
         // event.register(new Builder(getRes("chihuahua"), ModelLayerLocations.CHIHUAHUA)
         //     .withDefaultScale(0.704f));
