@@ -95,6 +95,14 @@
             "based_on" : "Moonless from Fear & Hunger - a 2018 survival horror role-playing video game developed by Finnish game developer Miro",
             "author" : "MashXP",
             "tags" : "community expansion"
+        },
+        {
+            "skin_name" : "Oslo",
+            "skin_id" : "skinexpansion_dtn:textures/oslo_nanatsu",
+            "use_model" : "skinexpansion_dtn:oslo_nanatsu",
+            "based_on" : "Oslo from The Seven Deadly Sins (七つの大罪) - a Japanese fantasy manga series written and illustrated by Nakaba Suzuki",
+            "author" : "MashXP",
+            "tags" : "community expansion"
         }
     ]
 }
