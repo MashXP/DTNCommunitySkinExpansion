@@ -23,6 +23,7 @@ import skinexpansion_dtn.models.EeveelutionUmbreon;
 import skinexpansion_dtn.models.EeveelutionVaporeon;
 import skinexpansion_dtn.models.Moonless;
 import skinexpansion_dtn.models.Ninetales;
+import skinexpansion_dtn.models.Oslo;
 
 @Mod(Constants.MOD_ID)
 public class DTNCommunitySkinExpansion {
@@ -52,6 +53,7 @@ public class DTNCommunitySkinExpansion {
         event.register(new Builder(getRes("eeveelution_sylveon"), ModelLayerLocations.EEVEELUTION_SYLVEON).withAccessory());
         event.register(new Builder(getRes("moonless"), ModelLayerLocations.MOONLESS)
             .withGlowingEyes().withAccessory());
+        event.register(new Builder(getRes("oslo_nanatsu"), ModelLayerLocations.OSLO).withAccessory());
     //CUSTOMIZABLE REGISTERS
         // event.register(new Builder(getRes("chihuahua"), ModelLayerLocations.CHIHUAHUA)
         //     .withDefaultScale(0.704f));
@@ -81,6 +83,7 @@ public class DTNCommunitySkinExpansion {
         event.registerLayerDefinition(ModelLayerLocations.EEVEELUTION_GLACEON, EeveelutionGlaceon::createBodyLayer);
         event.registerLayerDefinition(ModelLayerLocations.EEVEELUTION_SYLVEON, EeveelutionSylveon::createBodyLayer);
         event.registerLayerDefinition(ModelLayerLocations.MOONLESS, Moonless::createBodyLayer);
+        event.registerLayerDefinition(ModelLayerLocations.OSLO, Oslo::createBodyLayer);
    }
 
     public static ResourceLocation getRes(String name) {
