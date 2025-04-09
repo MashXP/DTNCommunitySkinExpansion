@@ -103,6 +103,14 @@
             "based_on" : "Oslo from The Seven Deadly Sins (七つの大罪) - a Japanese fantasy manga series written and illustrated by Nakaba Suzuki",
             "author" : "MashXP",
             "tags" : "community expansion"
+        },
+        {
+            "skin_name" : "Jake",
+            "skin_id" : "skinexpansion_dtn:textures/jake_adventure_time",
+            "use_model" : "skinexpansion_dtn:jake_adventure_time",
+            "based_on" : "Jake from Adventure Time - an American fantasy animated television series created by Pendleton Ward and co-produced by Frederator Studios for Cartoon Network",
+            "author" : "MashXP",
+            "tags" : "community expansion"
         }
     ]
 }

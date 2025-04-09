@@ -18,6 +18,7 @@ import skinexpansion_dtn.models.EeveelutionLeafeon;
 import skinexpansion_dtn.models.EeveelutionSylveon;
 import skinexpansion_dtn.models.EeveelutionUmbreon;
 import skinexpansion_dtn.models.EeveelutionVaporeon;
+import skinexpansion_dtn.models.JakeAdventureTime;
 import skinexpansion_dtn.models.Moonless;
 import skinexpansion_dtn.models.Ninetales;
 import skinexpansion_dtn.models.Oslo;
@@ -51,6 +52,8 @@ public class DTNCommunitySkinExpansion implements DogModelConfigurationEntry {
         event.register(new Builder(getRes("moonless"), ModelLayerLocations.MOONLESS)
             .withGlowingEyes().withAccessory());
         event.register(new Builder(getRes("oslo_nanatsu"), ModelLayerLocations.OSLO).withAccessory());
+        event.register(new Builder(getRes("jake_adventure_time"), ModelLayerLocations.JAKE_ADVENTURE_TIME).withAccessory()
+            .withCustomRootPivot(new Vector3f(0, 19, 0)));
     //CUSTOMIZABLE REGISTERS
         // event.register(new Builder(getRes("chihuahua"), ModelLayerLocations.CHIHUAHUA)
         //     .withDefaultScale(0.704f));
@@ -81,6 +84,7 @@ public class DTNCommunitySkinExpansion implements DogModelConfigurationEntry {
         event.registerLayerDefinition(ModelLayerLocations.EEVEELUTION_SYLVEON, EeveelutionSylveon::createBodyLayer);
         event.registerLayerDefinition(ModelLayerLocations.MOONLESS, Moonless::createBodyLayer);
         event.registerLayerDefinition(ModelLayerLocations.OSLO, Oslo::createBodyLayer);
+        event.registerLayerDefinition(ModelLayerLocations.JAKE_ADVENTURE_TIME, JakeAdventureTime::createBodyLayer);
    }
 
     public static ResourceLocation getRes(String name) {
