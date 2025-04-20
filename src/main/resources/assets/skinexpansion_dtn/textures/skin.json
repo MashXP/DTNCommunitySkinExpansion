@@ -111,6 +111,16 @@
             "based_on" : "Jake from Adventure Time - an American fantasy animated television series created by Pendleton Ward and co-produced by Frederator Studios for Cartoon Network",
             "author" : "MashXP",
             "tags" : "community expansion"
+        },
+
+
+        {
+            "skin_name" : "Remi",
+            "skin_id" : "skinexpansion_dtn:textures/remi",
+            "use_model" : "skinexpansion_dtn:remi",
+            "based_on" : "Remi - German Shepherd, Border Collie and Husky mixed dog! Suggested by Honey Bear (@galaxylightalex)",
+            "author" : "MashXP",
+            "tags" : "community expansion"
         }
     ]
 }
