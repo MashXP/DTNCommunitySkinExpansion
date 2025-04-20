@@ -109,7 +109,15 @@
             "skin_id" : "skinexpansion_dtn:textures/jake_adventure_time",
             "use_model" : "skinexpansion_dtn:jake_adventure_time",
             "based_on" : "Jake from Adventure Time - an American fantasy animated television series created by Pendleton Ward and co-produced by Frederator Studios for Cartoon Network",
-            "author" : "MashXP",
+            "author" : "Crystal, MashXP",
+            "tags" : "community expansion"
+        },
+        {
+            "skin_name" : "Sniffa",
+            "skin_id" : "skinexpansion_dtn:textures/sniffa",
+            "use_model" : "skinexpansion_dtn:sniffa",
+            "based_on" : "Crystal's Favorite Samoyed Plushie",
+            "author" : "Crystal, MashXP",
             "tags" : "community expansion"
         },
 
