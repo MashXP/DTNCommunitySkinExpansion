@@ -18,4 +18,5 @@ public class ModelLayerLocations {
     public static final ModelLayerLocation MOONLESS = new ModelLayerLocation(DTNCommunitySkinExpansion.getRes("moonless"), "main");
     public static final ModelLayerLocation OSLO = new ModelLayerLocation(DTNCommunitySkinExpansion.getRes("oslo_nanatsu"), "main");
     public static final ModelLayerLocation JAKE_ADVENTURE_TIME = new ModelLayerLocation(DTNCommunitySkinExpansion.getRes("jake_adventure_time"), "main");
+    public static final ModelLayerLocation REMI = new ModelLayerLocation(DTNCommunitySkinExpansion.getRes("remi"), "main");
 }
