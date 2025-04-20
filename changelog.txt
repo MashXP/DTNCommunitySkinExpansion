@@ -20,3 +20,8 @@ Update 1.2:
 + Added Oslo
 + Allow all models to render accessories.
 #Fix Moonless and Eevee model.
+
+Update 1.3:
++ Added Jake!
++ Added Remi - Honey Bear (@galaxylightalex)
++ Added Sniffa ft. Crystal
