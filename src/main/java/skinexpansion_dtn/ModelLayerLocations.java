@@ -18,4 +18,5 @@ public class ModelLayerLocations {
     public static final ModelLayerLocation MOONLESS = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "moonless"), "main");
     public static final ModelLayerLocation OSLO = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "oslo_nanatsu"), "main");
     public static final ModelLayerLocation JAKE_ADVENTURE_TIME = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "jake_adventure_time"), "main");
+    public static final ModelLayerLocation REMI = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "remi"), "main");
 }
